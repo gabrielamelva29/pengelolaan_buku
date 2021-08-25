@@ -24,7 +24,6 @@ public class PengelolaanBuku {
         System.out.println("data");
         System.out.println("okess");
         System.out.println("tambah line");
-        System.out.println("revert");
 
 
     }
