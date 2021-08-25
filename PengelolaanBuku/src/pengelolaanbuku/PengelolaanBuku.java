@@ -16,6 +16,7 @@ public class PengelolaanBuku {
      */
     public static void main(String[] args) {
         System.out.println("Pengelolaan Buku");
+        System.out.println("Daftar Buku");
     }
     
 }
