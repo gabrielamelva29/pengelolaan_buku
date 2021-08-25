@@ -19,16 +19,8 @@ public class PengelolaanBuku {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws IOException {
-        Scanner scan = new Scanner(System. in);
-        System.out.println("Silahkan Login");
-        String username, password;
-        System.out.println("Username : ");
-        username = scan.next();
-        System.out.println("Password : ");
-        password = scan.next();
-        Employee employee = new Employee("Dony", "Jl. Residen Indarjo", "Manager", username, password );
-        if(employee.login(username, password)){
         int pil = 0;
+        Scanner scan = new Scanner(System. in);
         RakBuku listBuku = new RakBuku();
         while(true){
             System.out.println("Selamat Datang di Aplikasi Penyimpanan Buku");
@@ -37,7 +29,6 @@ public class PengelolaanBuku {
             System.out.println("2.Tambah Buku Semua Buku");
             System.out.println("3.Edit Buku Semua Buku");
             System.out.println("4.Hapus Buku Semua Buku");
-            System.out.println("5.Profil Akun");
             System.out.println("9.Exit");
             System.out.print("Pilihan : ");
             pil = scan.nextInt();
@@ -96,23 +87,12 @@ public class PengelolaanBuku {
                 System.out.println("===========================================");
                 
             }
-            if(pil== 5){
-                
-                System.out.println("Nama : "+employee.getNama());
-                System.out.println("Alamat : "+employee.getAlamat());
-                System.out.println("Jabatan : "+employee.getJabatan());
-                System.out.println("===========================================");
-                
-            }
             if(pil == 9){
                 System.exit(0);
             }
             System.out.println("\n");
         }
-        }
-        else{
-            System.out.println("username atau password anda salah !");
-        }
+        
     }
     public static void clearScreen() {  
 
