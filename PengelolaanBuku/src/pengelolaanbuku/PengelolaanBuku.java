@@ -121,12 +121,6 @@ public class PengelolaanBuku {
 
         System.out.flush();  
 
-    public static void main(String[] args) {
-        // TODO code application logic here
-        
-        System.out.println("tambah line");
-
-    }
 }
 
 
