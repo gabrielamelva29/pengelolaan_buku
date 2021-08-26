@@ -23,9 +23,9 @@ public class PengelolaanBuku {
         Scanner scan = new Scanner(System. in);
         System.out.println("Silahkan Login");
         String username, password;
-        System.out.println("Username : ");
+        System.out.print("Username : ");
         username = scan.next();
-        System.out.println("Password : ");
+        System.out.print("Password : ");
         password = scan.next();
         Employee employee = new Employee("Dony", "Jl. Residen Indarjo", "Manager", username, password );
         if(employee.login(username, password)){
